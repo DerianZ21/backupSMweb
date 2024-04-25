@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import '../../styles/about.css'
+import VideoPresentation from './VideoPresentation'
 import misionImg from '../../assets/images/icon/mision.png'
 import visionImg from '../../assets/images/icon/vision.png'
 import fondoAbout from '../../assets/images/fondos/fondo-about.webp'
@@ -37,6 +38,7 @@ function About() {
           </img>
         </div>
       </div>
+      <VideoPresentation/>
       <div className='vision-mision'>
         <div className='mision'>
           <img src={misionImg} className='img-mision' alt='fondo de la misión'></img>
