@@ -1,8 +1,7 @@
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import '../../styles/contact/formemail.css'
 import validateForm from "../../funtions/validarForm";
-import contact from '../../assets/images/diseno/img-contactanos.webp'
 
 
 function FormEmail() {
@@ -97,11 +96,8 @@ function FormEmail() {
             <button type="submit">Enviar</button>
           </div>
         </form>
-
-
-
-
       </div>
+      <hr className="hr-contact-form"></hr>
     </div>
   );
 }
