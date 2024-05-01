@@ -1,18 +1,31 @@
 .main-form-email {
-    max-width: 1300px;
+    width: 100%;
+    align-self: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: var(--color-fondo-claro);
 }
 
+.hr-contact-form {
+    border: none;
+    padding: 0;
+    margin: 0;
+    align-self: center;
+    height: 600px;
+    width: 1.5px;
+    background-color: var(--color-representativo);
+    opacity: 0.5;
+}
+
 .container-form-contact {
-    width: 70%;
+    margin: auto;
+    width: 55%;
     display: flex;
     flex-direction: column;
     padding: 20px;
 }
 
-.text-form-Email *{
+.text-form-Email * {
     width: 100%;
     padding: 5px 0;
     margin: 0;
@@ -48,13 +61,13 @@
     height: 45px;
     padding-left: 20px;
     border-radius: 100px;
-    border: 1px solid #c0babc;
+    border: 1px solid #a7a2a3;
     margin-top: 10px;
-    color: #000000;
+    color: #535353;
     outline: none;
 }
 
-.contenedor-input-contacto div label{
+.contenedor-input-contacto div label {
     font-size: 13px;
     padding-left: 20px;
     color: #535353;
@@ -63,7 +76,7 @@
 
 
 .contenedor-input-contacto div textarea {
-    
+    margin-top: 10px;
     height: 140px;
     width: 100%;
     padding-left: 20px;
@@ -75,16 +88,7 @@
     resize: none;
 }
 
-.contenedor-input-contacto button {
-    background-color: var(--color-representativo);
-    border: none;
-    width: 125px;
-    height: 35px;
-    color: var(--color-fuente-claro);
-    border-radius: 10px;
-    cursor: pointer;
 
-}
 
 .contenedor-input-contacto button:active {
     background-color: var(--color-fondo-claro);
@@ -94,12 +98,167 @@
 
 .errorForm {
     color: red;
-    font-size: 10px;
+    font-size: 11px;
+    padding: 0 0 0 20px;
+    margin: 0;
 }
+
+
+/*--------boton de enviar------*/
+
+.btn-shine {
+    background-color: var(--color-representativo);
+    width: 125px;
+    height: 50px;
+    color: var(--color-fuente-claro);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 0;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+
+@keyframes rotate624 {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+
+    25% {
+        transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+
+    75% {
+        transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+}
+
+@keyframes storm1261 {
+    0% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+
+    25% {
+        transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+
+    50% {
+        transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+
+    75% {
+        transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+}
+
+.btn-shine {
+    border: 1px solid;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn-shine span {
+    z-index: 20;
+}
+
+.btn-shine:after {
+    background: white;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: 0.4;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+}
+
+.btn-shine:hover:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
 
 @media(max-width:750px) {
     .container-form-contact form {
         flex-direction: column;
         gap: 20px;
+    }
+}
+
+
+
+/*---------cards---------*/
+
+.main-cards {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 40px;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-card {
+    margin: auto;
+}
+
+.card h2 {
+    margin: 0;
+}
+
+.card a {
+    width: 100%;
+    text-decoration: none;
+    color: var(--color-fuente-oscuro);
+    display: flex;
+    flex-direction: row;
+}
+
+.img-card {
+    width: 90px;
+    height: 90px;
+    border: solid 2px var(--color-representativo);
+    align-content: center;
+    border-radius: 100px;
+}
+
+.img-card img {
+    width: 50%;
+}
+
+@media(max-width: 950px) {
+
+    .hr-contact-form {
+        height: 1.5px;
+        width: 80%;
+    }
+
+    .main-form-email {
+        flex-direction: column;
     }
 }

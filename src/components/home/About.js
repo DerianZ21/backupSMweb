@@ -30,7 +30,7 @@ function About() {
               estableciendo estandares de excelencia en servcios al cliente y tecnologías de seguridad.</p>
           </div>
           <div className='img-info-about'>
-            <img src={infoAbout} alt='imagen osbre nosotros'>
+            <img src={infoAbout} alt='imagen sobre nosotros'>
             </img>
           </div>
         </div>

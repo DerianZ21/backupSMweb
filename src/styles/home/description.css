@@ -7,7 +7,6 @@
     justify-content: space-between;
     border-radius: 30px;
     box-shadow: 0px 0px 20px -7px #000000;
-
 }
 
 .main-description::before {
@@ -23,8 +22,9 @@
     z-index: 0; /* Coloca el fondo detrás del contenido */
     background-size: cover; /* Asegura que la imagen de fondo cubra todo el contenedor */
     background-position: center;
-
 }
+
+
 .inicio{
     margin: auto;
     display: flex;

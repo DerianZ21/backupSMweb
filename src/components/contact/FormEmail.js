@@ -2,6 +2,9 @@
 import React, { useState } from "react";
 import '../../styles/contact/formemail.css'
 import validateForm from "../../funtions/validarForm";
+import ubicacion from '../../assets/images/icon/ubicacion2.png'
+import telefono from '../../assets/images/icon/telefono.png'
+import email from '../../assets/images/icon/email.png'
 
 
 function FormEmail() {
@@ -81,7 +84,7 @@ function FormEmail() {
               />
               {errors.subject && <p className="errorForm">{errors.subject}</p>}
             </div>
-            
+
             <div>
               <label htmlFor="message">Mensaje</label>
               <textarea
@@ -92,12 +95,45 @@ function FormEmail() {
               />
               {errors.message && <p className="errorForm">{errors.message}</p>}
             </div>
-            
-            <button type="submit">Enviar</button>
+
+            <button className="btn-shine" type="submit">Enviar</button>
           </div>
         </form>
       </div>
       <hr className="hr-contact-form"></hr>
+      <div className="main-cards">
+        <div className="card">
+          <div className="img-card">
+            <img src={telefono} alt="icono de telefono"></img>
+          </div>
+          <div className="content-card">
+            <h2>Teléfonos</h2>
+            <p>comunícate con nosotros</p>
+          </div>
+        </div>
+        <div className="card">
+          <div className="img-card">
+            <img src={email} alt="icono de correo"></img>
+          </div>
+          <div className="content-card">
+            <h2>Email</h2>
+            <p>algo en base a correos</p>
+          </div>
+        </div>
+        <div className="card">
+          <a  href="https://www.google.com/maps/place/R4GC%2BMJP,+Guayaquil+090514/@-2.1732557,-79.8784461,21z/data=!4m6!3m5!1s0x902d6dcbbe55397d:0xddf01fe35396a6c3!8m2!3d-2.1732247!4d-79.8784865!16s%2Fg%2F11g0znxnct?entry=ttu"
+            target="_blank"
+            rel="noopener noreferrer">
+            <div className="img-card">
+              <img src={ubicacion} alt="icono de ubicación"></img>
+            </div>
+            <div className="content-card">
+              <h2>Ubicación</h2>
+              <p>visítanos</p>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

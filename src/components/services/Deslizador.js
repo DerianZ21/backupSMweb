@@ -78,7 +78,7 @@ function Deslizador() {
                 <h1 style={{ textTransform: 'uppercase' }}>{PS.id}</h1>
                 <div className="icon-deslizador">
 
-                  <img src={PS.icon}></img>
+                  <img src={PS.icon} alt={PS.descripcion}></img>
                 </div>
 
               </div>
