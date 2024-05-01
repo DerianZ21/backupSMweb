@@ -1,7 +1,6 @@
 .main-menu-servicio{
-    height: 220px;
-    max-width: 90%;
-    max-width: 700px;
+    height: 150px;
+    max-width: 1000px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -33,7 +32,6 @@
 }
 
 .png img{
-    border-radius: 25px;   
 }
 
 
@@ -54,6 +52,7 @@
 
 .png:hover{
     background-color: white;
+    border: var(--color-fuente) 5px solid;
 }
 
 @media (max-width: 750px) {

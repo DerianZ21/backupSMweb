@@ -39,20 +39,39 @@
 	justify-content: center;
 	background-color: #0d0d13;
 	border-radius: 15px;
-	max-height: 170px;;
+	max-height: 300px;;
 }
 
-.logo-footer{
+.hr-footer-marca {
+	opacity: 0.5;
+	height: 1px;
+	width: 80%;
+	background-color: #ffffff ;
+}
+
+.marca-footer a{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.logo-footer-texto{
 	filter: brightness(0) invert(1);
 	margin: 15px;
 }
 
-.logo-footer-pinlet{
+.logo-footer-texto-pinlet{
 	height: 20px;
 }
 
-.logo-footer-MS{
+.logo-footer-texto-MS{
 	height: 35px;
+}
+
+.logo-footer{
+	height: 60px;
+	width: 55px;
+	
 }
 
 .menu-footer{
@@ -67,16 +86,13 @@
 .menu-footer ul{
 	display: flex;
     justify-content: space-between;
-	padding: 0;		
-  	align-items: flex-start;
-	text-align: left;
+  	align-items: start;
 }
 
 .menu-footer li{
 	font-size: 15px;
 	display: flex;
 	flex-direction: column;
-	align-items: start;
 	width: 200px;
 	margin: 0 45px;
 }
@@ -96,9 +112,24 @@
 	width: 200px;
 }
 
-.menu-footer ul hr,
-.menu-footer ul h3{
-	transform: translateX(-10px)
+
+.icono-ubicacion{
+	height: 15px;
+}
+
+
+.enlaces-footer p{
+	color: #ff8c8c;
+	border-bottom: #ff8c8c solid 1px;
+}
+
+.enlaces-footer a:hover p{
+	color: #ffffff;
+	border-bottom: #ffffff solid 1px;
+}
+
+.enlaces-footer a:hover .icono-ubicacion{
+	filter: var(--color-icono-claro);
 }
 
 /*-------------tooltips--------*/
@@ -124,10 +155,6 @@
 	transition: all 0.5 ease;
 }
 
-.icono-ubicacion{
-	filter: brightness(0) invert(1);
-	height: 15px;
-}
 
 .icono-whatsapp{
 	transition: all 0.5s;
@@ -146,6 +173,8 @@
 .iconos-redes:hover{
 	opacity: .5;
 }
+
+
 
 
 
@@ -168,6 +197,14 @@
 	.marca-footer{
 		flex-direction: row;
 		margin: auto;
+		padding: 10px;
+	}
+
+	.hr-footer-marca {
+		opacity: 0.5;
+		height: 100px;
+		width: 1px;
+		background-color: #ffffff ;
 	}
 
 	.aditional{
@@ -196,18 +233,12 @@
 
 @media (max-width: 768px) {
 
-
-	.aditional{
-		flex-direction: column;
-	}
-
 	.menu-footer{
 		max-width: 800px;
 		margin: auto;
 	}
 
 	.menu-footer ul{
-		flex-direction: column;
 		max-width: 800px;
 		margin: auto;
 	}
@@ -231,10 +262,31 @@
 	
 }
 
+@media (max-width: 670px) {
+
+	.menu-footer ul{
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.enlaces-footer *{
+		justify-content: center;
+		text-align: center;
+	}
+}
+
+
 @media (max-width: 400px) {
 
 	.marca-footer{
 		flex-direction: column;
+	}
+
+	.hr-footer-marca {
+		opacity: 0.5;
+		height: 1px;
+		width: 80%;
+		background-color: #ffffff ;
 	}
 }
 

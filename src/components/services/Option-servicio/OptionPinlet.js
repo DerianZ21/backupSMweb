@@ -1,7 +1,6 @@
 import React from 'react';
-import tituloPinlet from '../../../assets/images/logo/pinlet-texto.svg'
-import marco from '../../../assets/images/diseno/marco-smartphone.webp'
-import pantalla from '../../../assets/images/diseno/pantalla-pinlet.webp'
+import tituloPinlet from '../../../assets/images/logo/pinlet-completo.png'
+import telefonos from '../../../assets/images/diseno/cell-app-pinlet.png';
 import megafono from '../../../assets/images/icon/megafono.png'
 import QR from '../../../assets/images/icon/QR.png'
 import seguridad from '../../../assets/images/icon/seguridad.png'
@@ -11,6 +10,7 @@ import caja from '../../../assets/images/icon/caja.png'
 import usuarios from '../../../assets/images/icon/usuarios.png'
 import google from '../../../assets/images/icon/google-play.png'
 import apple from '../../../assets/images/icon/apple.png'
+import huawei from '../../../assets/images/icon/huawei.png'
 
 
 
@@ -18,21 +18,20 @@ function OptionPinlet (){
 
     return(
         <div>
-            <div id='pinlet'>
+            <div className='pinlet'>
             <div  className='texto-pinlet'>
-              <a href='http://www.pinlet.net/' target='_blank' rel="noopener noreferrer">
-                <img  id='titulo-pinlet' src={tituloPinlet} alt='pinlet' ></img>
+              <a href='https://pinlet.app/' target='_blank' rel="noopener noreferrer">
+                <img  className='titulo-pinlet' src={tituloPinlet} alt='pinlet' ></img>
               </a>
               <p>
                 Gestiones las visitas en tu redidencia
               </p>
-              <div className='telefono'>
-                <img className='marco-smartphone' src={marco} alt='marco' ></img>
-                <img className='pantalla' src={pantalla} alt='pantalla'></img>
+              <div className='telefonos'>
+                <img src={telefonos} alt='telefonos' ></img>
               </div>
             </div>
             <div>
-              <div id='info-pinlet'>
+              <div className='info-pinlet'>
                 <div>
                   <div className='contenedor-img-pinlet'>
                     <img src={megafono} alt='megafono'></img>
@@ -77,14 +76,19 @@ function OptionPinlet (){
                 </div>
               </div>
               <div className='descarga-pinlet'>
-                <a href='https://play.google.com/store/apps/details?id=com.pinletsa.pinlet&pli=1' rel="noopener noreferrer" target='_blank'>
+                <a href='https://play.google.com/store/apps/details?id=com.vionsolutions.qrticket&hl=es' rel="noopener noreferrer" target='_blank'>
                   <div className='contenedor-img-google'>
                     <img src={google} alt='google play'></img>
                   </div>
                 </a>
-                <a href='https://apps.apple.com/us/app/pinlet/id1191946483' rel="noopener noreferrer" target='_blank'>
+                <a href='https://apps.apple.com/us/app/pinlet-qr-ticket/id1533524491' rel="noopener noreferrer" target='_blank'>
                   <div className='contenedor-img-apple'>
                     <img src={apple} alt='apple'></img>
+                  </div>
+                </a>
+                <a href='https://appgallery.huawei.com/app/C108879605' rel="noopener noreferrer" target='_blank'>
+                  <div className='contenedor-img-huawei'>
+                    <img src={huawei} alt='huawei'></img>
                   </div>
                 </a>
               </div>

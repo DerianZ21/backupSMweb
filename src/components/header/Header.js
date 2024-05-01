@@ -1,37 +1,29 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Navigation from './Navigation.js';
+import ReactSwitch from 'react-switch';
+import { useState, useEffect } from 'react';
 import Branding from './Branding.js';
+import Config from './Config.js';
 import '../../styles/header.css';
+import useHeaderVisible from '../../funtions/useHeaderVisible.js';// Asegúrate que la ruta es correcta
 
 function Header() {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useHeaderVisible();  // Usa destructuring para obtener ambos valores
 
-  useEffect(() => {
-    let lastScrollTop = 0; 
 
-    function handleScroll() {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-      if (scrollTop > lastScrollTop) {
-        setIsVisible(false);
-      } else {
-        setIsVisible(true);
-      }
-
-     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // para actualiza el scrollTop
-    }
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
-      <header className={`main-header ${isVisible ? 'mostrar' : 'ocultar'}`} onMouseOver={() => setIsVisible(true)}>
-        <div className='secundary-header'>
-          <Branding />
+    <header className={`main-header ${isVisible ? 'mostrar' : 'ocultar'}`} onMouseOver={() => setIsVisible(true)}>
+      <div className='secundary-header'>
+        <Branding />
+        <div className='header-right'>
+          <Config />
           <Navigation />
+
         </div>
-      </header>
+
+      </div>
+    </header>
   );
 }
 

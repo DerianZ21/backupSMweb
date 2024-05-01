@@ -1,5 +1,5 @@
 
-import React, {  useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import '../../styles/contact/formemail.css'
 import validateForm from "../../funtions/validarForm";
 import contact from '../../assets/images/diseno/img-contactanos.webp'
@@ -40,15 +40,15 @@ function FormEmail() {
 
   return (
     <div className='main-form-email'>
-      <h1>Envíanos un correo</h1>
       <div className="container-form-contact">
         <form onSubmit={handleSubmit}>
-          <div className="form-contact-img">
-            <img src={contact}></img>
+          <div className="text-form-Email">
+            <h3>¿Tienes alguna duda?</h3>
+            <p>Llena el siguiente formulario y nos pondremos en contacto contigo.</p>
           </div>
           <div className="contenedor-input-contacto">
             <div>
-              <label htmlFor="name">Nombre:</label>
+              <label htmlFor="name">Nombre y apellido</label>
               <input
                 id="name"
                 type="text"
@@ -57,10 +57,10 @@ function FormEmail() {
                 onChange={handleChange}
               />
               {errors.name && <p className="errorForm">{errors.name}</p>}
-
             </div>
+
             <div>
-              <label htmlFor="email">Correo Electrónico:</label>
+              <label htmlFor="email">Correo Electrónico</label>
               <input
                 id="email"
                 type="email"
@@ -70,8 +70,9 @@ function FormEmail() {
               />
               {errors.email && <p className="errorForm">{errors.email}</p>}
             </div>
+
             <div>
-              <label htmlFor="subject">Asunto:</label>
+              <label htmlFor="subject">Asunto</label>
               <input
                 id="subject"
                 type="text"
@@ -80,10 +81,10 @@ function FormEmail() {
                 onChange={handleChange}
               />
               {errors.subject && <p className="errorForm">{errors.subject}</p>}
-
             </div>
+            
             <div>
-              <label htmlFor="message">Mensaje:</label>
+              <label htmlFor="message">Mensaje</label>
               <textarea
                 id="message"
                 name="message"
@@ -92,13 +93,14 @@ function FormEmail() {
               />
               {errors.message && <p className="errorForm">{errors.message}</p>}
             </div>
+            
             <button type="submit">Enviar</button>
           </div>
         </form>
-        
-        
-        
-        
+
+
+
+
       </div>
     </div>
   );

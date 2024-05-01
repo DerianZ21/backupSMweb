@@ -7,15 +7,20 @@ import nameSM from '../../assets/images/logo/ms-logo-texto.svg';
 function Branding() {
     return (
         <div className="branding">
-            <Link to="/about">
-                <img className='logo' src={logoSM} alt="Logo Seguridad Manrique" />
+            <Link to="/">
+                <div className='logo'>
+                    <img className='logo' src={logoSM} alt="Logo Seguridad Manrique" />
+                </div>
+
+                <div className='name-marca'>
+                    <img  src={nameSM} alt='nombre de la marca'>
+                    </img>
+                </div>
             </Link>
-            <img className='name-marca' src={nameSM} alt='nombre de la marca'>
-            </img>
-            
+
         </div>
 
-        );
+    );
 }
 
 export default Branding;

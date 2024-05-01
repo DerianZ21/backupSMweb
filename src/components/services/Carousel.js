@@ -7,7 +7,7 @@ import monitoreo from '../../assets/images/funciones/central-monitoreo2.webp';
 import recomendaciones from '../../assets/images/nuestras/recomendaciones-de-seguridad.webp';
 import beneficios from '../../assets/images/nuestras/beneficios.webp';
 import costos from '../../assets/images/nuestras/costos-servicio1.webp';
-import pinlet from '../../assets/images/nuestras/pinlet.webp';
+import pinlet from '../../assets/images/funciones/pinlet-description.webp';
 
 function Carousel() {
 

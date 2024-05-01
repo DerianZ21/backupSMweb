@@ -26,7 +26,7 @@ function Tecnologias() {
                             <hr></hr>
                             <img src={rostro} alt="icono de escaner facial"></img>
                         </div>
-                        <p>Seguridad biometrica ya sea por escaner
+                        <p>Seguridad biométrica ya sea por escaner
                             <b> ocular</b>, de <b>huella</b> o <b>facial</b>, autentifica tus recursos en base a tus datos genéticos.</p>
                     </div>
                 </div>
@@ -40,8 +40,8 @@ function Tecnologias() {
                             <hr></hr>
                             <img src={id} alt="icono de código por número de identificación"></img>
                         </div>
-                        <p>Protéjete con tecnologias de autenticación en base a <b>codigos-QR</b>
-                            , seguridad por <b>contraseñas</b> o <b>carnets</b> personalidados de identidad.</p>
+                        <p>Protéjete con tecnologías de autentificación en base a <b>códigos-QR</b>
+                            , seguridad por <b>contraseñas</b> o <b>carnets</b> personalizados de identidad.</p>
                     </div>
                 </div>
 

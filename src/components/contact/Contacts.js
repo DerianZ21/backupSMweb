@@ -11,11 +11,11 @@ function Contacts() {
   return (
     <div className='main-contact'>
       <h1>CONTÁCTANOS</h1>
+      <FormEmail />
       <div className='top-contact'>
         <Cards />
         <Map />
       </div>
-      <FormEmail />
     </div>
   );
 }

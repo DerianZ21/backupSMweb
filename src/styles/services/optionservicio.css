@@ -115,22 +115,21 @@
 /*--------pinlet-------*/
 
 
-#pinlet{
+.pinlet{
     color: white;
     background-color: #3d4751;
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: 800px;
+    max-width: 1100px;
     margin: auto;
     padding: 30px;
     border-radius: 30px;
 }
 
-#titulo-pinlet{
-    filter: var(--color-icono-claro);
+.titulo-pinlet{
     padding-bottom: 10px;
-    max-height: 50px;
+    max-height: 100px;
 }
 
 .texto-pinlet{
@@ -140,34 +139,17 @@
     justify-content: space-around;
 }
 
-.telefono{
-    position: relative;
-    height: 375px;
-    width: 200px;
+.telefonos{
+    max-width: 450px;
 }
 
-.marco-smartphone,
-.pantalla{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.marco-smartphone{
+.telefonos img{
     width: 100%; 
     height: 100%; 
-    z-index:2;
 }
 
-.pantalla{
-    width: 99%; 
-    height: 99%; 
-    z-index:1;
-    border-radius: 30px;
-    transform: translateX(2px);
-}
 
-#info-pinlet{
+.info-pinlet{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -175,30 +157,31 @@
 
 }
 
-#info-pinlet div{
+.info-pinlet div{
     display: flex;
     flex-direction: column;
     width: 170px;
     align-items: center;
 }
 
-#info-pinlet .contenedor-img-pinlet{
-    width:50%;
+.contenedor-img-pinlet{
+    max-width:90px;
     background-color: #ef472b;
     border-radius: 100px;
 }
 
-#info-pinlet img{
+.info-pinlet img{
     filter: brightness(0) invert(1);
     width:45px;
     margin: 20px;
 }
 
-#info-pinlet p{
+.info-pinlet p{
     width: 75%;
 }
 
 .descarga-pinlet{
+    padding-top: 20px;
     max-width:325px;
     display: flex;
     margin: auto;
@@ -214,36 +197,43 @@
 }
 
 .contenedor-img-apple img,
-.contenedor-img-google img{
+.contenedor-img-google img,
+.contenedor-img-huawei img{
     filter: brightness(0) invert(1);
     max-width:45px;
     margin: 20px;
+    transition: all .5s ease;
 }
 
 .contenedor-img-apple,
-.contenedor-img-google{
+.contenedor-img-google,
+.contenedor-img-huawei{
     width:100%;
+    transition: all .5s ease;
 }
 
 .contenedor-img-google{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px
+    border-radius: 20px 0 0 20px;
 }
 
-.contenedor-img-apple{
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px
+
+.contenedor-img-huawei{
+    border-radius: 0 20px 20px 0;
 }
 
 .contenedor-img-apple:hover,
-.contenedor-img-google:hover{
+.contenedor-img-google:hover,
+.contenedor-img-huawei:hover{
     background-color:white;
 }
 
 .contenedor-img-apple:hover img,
-.contenedor-img-google:hover img{
+.contenedor-img-google:hover img,
+.contenedor-img-huawei:hover img{
     filter: brightness(0) invert(0);
 }
+
+
 
 
 /*--------hogar-oficina---------*/
@@ -339,6 +329,10 @@
 /*--------oficina-----------*/
 
 @media (max-width: 850px){
+
+    .pinlet{
+        flex-direction: column;
+    }
     
     .contenedor-img-hogar,
     .contenedor-img-oficina{

@@ -16,7 +16,7 @@ function Extra() {
             </div>
             <div className="contenedor-info-extra">
                 <div className="encabezado-extra">
-                    <h1>SISTEMA DE CONTROL</h1>
+                    <h1>SISTEMAS DE CONTROL</h1>
                     <h2>Seguridad - Control - Seguimiento</h2>
                 </div>
                 <div className="content-centrado">

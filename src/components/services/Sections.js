@@ -63,7 +63,7 @@ function Sections() {
       descripcion: "CÓDIGO QR",
       info:<p>Utiliza códigos QR para controlar el acceso a edificios, oficinas, 
         eventos y demas areas que deseas restringir, estos pueden ser implementados en 
-        dispositivos especailes, tarjetas o de manera digital en dispositivos moviles.</p> 
+        dispositivos especiales, tarjetas o de manera digital en dispositivos móviles.</p> 
     },
      
     {

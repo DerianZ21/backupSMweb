@@ -2,10 +2,8 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import '../../styles/about.css'
-import VideoPresentation from './VideoPresentation'
 import misionImg from '../../assets/images/icon/mision.png'
 import visionImg from '../../assets/images/icon/vision.png'
-import fondoAbout from '../../assets/images/fondos/fondo-about.webp'
 import infoAbout from '../../assets/images/nuestras/info-about.webp'
 
 function About() {
@@ -24,21 +22,19 @@ function About() {
   return (
     <div id='main-about' className='main-about'>
       <div className='info-about'>
-        <div className='content-fondo-about'>
-          <img src={fondoAbout} alt='fondo sobre nosotros'></img>
-        </div>
         <div className='content-info-about'>
           <div className='texto-info-about'>
-            <h1>SOLUCIONES QUE SALVAGUARDAN TU SEGURIDAD</h1>
+            <h1>SOLUCIONES QUE RESGUARDAN TU SEGURIDAD</h1>
             <p>Trabajamos por el desarrollo de nuestros servicios a nuestros clientes,
               asegurando su tranquilidad
               estableciendo estandares de excelencia en servcios al cliente y tecnologías de seguridad.</p>
           </div>
-          <img src={infoAbout} alt='imagen osbre nosotros'>
-          </img>
+          <div className='img-info-about'>
+            <img src={infoAbout} alt='imagen osbre nosotros'>
+            </img>
+          </div>
         </div>
       </div>
-      <VideoPresentation/>
       <div className='vision-mision'>
         <div className='mision'>
           <img src={misionImg} className='img-mision' alt='fondo de la misión'></img>
